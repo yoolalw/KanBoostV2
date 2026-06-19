@@ -208,3 +208,5 @@ class TestPages:
         avancar = self.chrome.find_element(By.ID, "avancar")
         avancar.click()
         time.sleep(1)
+
+    
