@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>KanBoost!</title>
+</head>
+
+<body class="bg-[#ededed]">
+
+    <div class="head h-33 w-full fixed shadow-xl bg-[#ededed]">
+        <img src="img/Untitled (500 x 500 px).png" class="mt-[-180px] cursor-pointer">
+    </div>
+    <div class="h-33 w-full"></div>
+    <div class="justify-center align-middle flex items-center m-auto">
+        <img src="img/Untitled (500 x 500 px).png" class="mt-[-100px]">
+    </div>
+    <div class="justify-center align-middle flex-col items-center m-auto flex mt-[-140px] ">
+        <h1 class="text-[30px] font-bold text-[#333] ">Seja bem-vindo!</h1>
+        <div class="buttons gap-3 flex justify-center mt-5 items-center align-middle m-auto h-[400px] w-[1100px]">
+            <button id="regBtn" onclick="ca()"
+                class="rounded-lg bg-[#aed6f1] h-full w-[350px] shadow-xl border-white border-3 cursor-pointer hover:mt-[-10px]">
+                <h1 class="text-[45px] font-bold text-blue-900">Cadastrar atividade</h1>
+            </button>
+            <button id="kanBtn" onclick="kan()"
+                class="rounded-lg bg-[#a2ded0] h-full w-[350px] shadow-xl border-white border-3 cursor-pointer hover:mt-[-10px]">
+                <h1 class="text-[45px] font-bold text-green-900">Ver Kanban</h1>
+
+            </button>
+            <button id="relBtn"
+                class="rounded-lg bg-[#f7f7f7] h-full w-[350px] shadow-xl border-white border-3 cursor-pointer hover:mt-[-10px]">
+                <h1 class="text-[50px] font-bold text-[#333]">Gerar relatório</h1>
+            </button>
+        </div>
+    </div>
+    <script src="js/homepage.js"></script>
+</body>
+
+</html>
