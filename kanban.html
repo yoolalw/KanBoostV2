@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KanBoost!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-[#ededed]">
+    <div class="head h-33 w-full fixed shadow-xl bg-[#ededed]">
+        <img src="img/Untitled (500 x 500 px).png" class="mt-[-180px] cursor-pointer" onclick="home()">
+    </div>
+    <div class="h-33 w-full"></div>
+
+    <div class="justify-center flex-col align-middle items-center m-auto flex">
+
+        <div class="columns gap-3 h-[660px] w-[1100px] mt-10 justify-center flex">
+            <div class="todo  h-full w-[350px] bg-[#f7f7f7] rounded-lg shadow-xl border-2 border-white flex-col ">
+                <h1
+                    class="text-center flex w-full justify-center text-[30px] font-bold bg-gray-200 rounded-full shadow-xl border-2 border-gray-300">
+                    To do</h1>
+                <div class="todo flex mt-2 flex-col gap-2" id='todo'></div>
+            </div>
+
+            <div
+                class="doing h-full w-[350px] bg-[#aed6f1] rounded-lg shadow-xl border-2 border-blue-100 flex-col flex">
+
+                <h1
+                    class="text-center flex w-full justify-center text-[30px] font-bold bg-blue-200 rounded-full shadow-xl border-2 border-blue-300">
+                    Doing</h1>
+                <div class="doing flex mt-2 flex-col gap-3" id="doing"></div>
+            </div>
+
+            <div
+                class="done h-full w-[350px] bg-[#a2ded0] rounded-lg shadow-xl border-2 border-green-100 flex-col flex">
+
+                <h1
+                    class="text-center flex w-full justify-center text-[30px] font-bold bg-green-200 rounded-full shadow-xl border-2 border-green-300">
+                    Done</h1>
+                    <div class="done mt-2 flex flex-col gap-3" id="done"></div>
+            </div>
+        </div>
+
+        <button class="mt-3 h-10 w-[300px] bg-[#333] rounded-lg  shadow-xl text-[#f7f7f7] border-3 border-gray-600 text-[20px] font-bold hover:bg-gray-600 cursor-pointer" onclick="ca()">Nova tarefa!</button>
+    </div>
+
+    <script src="js/kanban.js"></script>
+
 </body>
+
 </html>

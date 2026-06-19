@@ -45,3 +45,8 @@ class TestPages:
         self.chrome.get('http://127.0.0.1:5500/registerPage.html')
         self.chrome.find_element(By.ID, 'input').send_keys('Atividade 1')
         self.chrome.find_element(By.ID, 'button').click()
+
+    def test_verifying_if_ativ_has_been_created(self):
+        self.chrome.get('http://127.0.0.1:5500/kanban.html')
+        atividade = self.chrome.find_element(By.CLASS_NAME, "atividade")
+        assert atividade.text == 'Atividade 1\nVoltar\nAvançar'
