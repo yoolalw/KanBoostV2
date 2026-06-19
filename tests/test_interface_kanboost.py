@@ -40,3 +40,8 @@ class TestPages:
         )
         msg = self.chrome.find_element(By.ID, 'msg')
         assert msg.text == 'Campo de cadastro vazio! Preencha-o e tente novamente.'
+
+    def test_inserting_itens_in_field(self):
+        self.chrome.get('http://127.0.0.1:5500/registerPage.html')
+        self.chrome.find_element(By.ID, 'input').send_keys('Atividade 1')
+        self.chrome.find_element(By.ID, 'button').click()
