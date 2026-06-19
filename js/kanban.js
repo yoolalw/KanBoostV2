@@ -12,7 +12,7 @@ const done = document.getElementById('done')
 
 JSON.parse(localStorage.ativ).forEach(a => {
     const card = document.createElement('div')
-    card.className = "atividade h-[120px] z-5 rounded-xl bg-white shadow-lg w-full flex justify-center align-middle items-center m-auto flex-col"
+    card.className = "atividade h-[120px] z-5 rounded-xl bg-white shadow-lg w-full flex justify-center border-2 border-gray-300  align-middle items-center m-auto flex-col"
     card.innerHTML += `
         <h1 class="text-[30px] text-[#333]">${a}</h1>
         <div class="buttons flex gap-15 mt-5">
