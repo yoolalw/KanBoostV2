@@ -31,3 +31,12 @@ class TestPages:
         WebDriverWait(self.chrome, 4).until(
             ec.url_to_be('http://127.0.0.1:5500/registerPage.html')
         )
+
+    def test_error_msg(self):
+        self.chrome.get('http://127.0.0.1:5500/registerPage.html')
+        self.chrome.find_element(By.ID, 'button').click()
+        WebDriverWait(self.chrome, 10).until(
+            ec.visibility_of_element_located((By.ID, 'msg'))
+        )
+        msg = self.chrome.find_element(By.ID, 'msg')
+        assert msg.text == 'Campo de cadastro vazio! Preencha-o e tente novamente.'
