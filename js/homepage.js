@@ -4,5 +4,5 @@ function home() {
 function ca() {
     window.location.href = "registerPage.html"
 } function kan() {
-    window.location.href = "registerPage.html"
+    window.location.href = "kanban.html"
 }
