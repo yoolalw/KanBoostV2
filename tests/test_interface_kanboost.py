@@ -141,7 +141,7 @@ class TestPages:
         voltar.click()
         time.sleep(1)
 
-    #12
+    # 12
     def test_blocks_returns_ativ(self):
         self.chrome.get('http://127.0.0.1:5500/kanban.html')
         time.sleep(1)
@@ -164,4 +164,47 @@ class TestPages:
 
         voltar = self.chrome.find_element(By.ID, "voltar")
         voltar.click()
+        time.sleep(1)
+
+    #13
+    def test_inserting_multiples_ativs(self):
+        self.chrome.get('http://127.0.0.1:5500/registerPage.html')
+
+        self.chrome.find_element(By.ID, 'input').send_keys('Atividade 2')
+        self.chrome.find_element(By.ID, 'button').click()
+        time.sleep(1)
+        self.chrome.find_element(By.ID, 'input').send_keys('Atividade 3')
+        self.chrome.find_element(By.ID, 'button').click()
+
+        self.chrome.get('http://127.0.0.1:5500/kanban.html')
+        time.sleep(1)
+        self.chrome.find_element(By.CLASS_NAME, 'atividade').is_displayed()
+
+    #14
+    def test_moving_multiples_ativs(self):
+        self.chrome.get('http://127.0.0.1:5500/kanban.html')
+        time.sleep(1)
+
+        avancar = self.chrome.find_element(By.ID, "avancar")
+        avancar.click()
+        time.sleep(1)
+
+        avancar = self.chrome.find_element(By.ID, "avancar")
+        avancar.click()
+        time.sleep(1)
+
+        avancar = self.chrome.find_element(By.ID, "avancar")
+        avancar.click()
+        time.sleep(1)
+
+        avancar = self.chrome.find_element(By.ID, "avancar")
+        avancar.click()
+        time.sleep(1)
+
+        avancar = self.chrome.find_element(By.ID, "avancar")
+        avancar.click()
+        time.sleep(1)
+
+        avancar = self.chrome.find_element(By.ID, "avancar")
+        avancar.click()
         time.sleep(1)
