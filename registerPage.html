@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-[#ededed]">
+
+    <div class="head h-33 w-full fixed shadow-xl bg-[#ededed]">
+        <img src="img/Untitled (500 x 500 px).png" class="mt-[-180px] cursor-pointer" onclick="home()">
+    </div>
+    <div class="h-33 w-full"></div>
+
+    <div class="justify-center align-middle items-center mt-[150px] m-auto flex flex-col">
+        <img src="img/Untitled (500 x 500 px).png" class="h-100 mt-[-200px]">
+        <div class="bg-[#aed6f1] h-[400px] justify-center items-center mt-[-150px] flex flex-col w-[1100px] rounded-xl shadow-xl border-white border-2">
+            <h3 class="w-[200px] h-[40px] shadow-xl bg-[#ededed] text-center items-center flex mt-[-20px] align-middle justify-center rounded-full text-[#333]">Cadastre suas tarefas!</h3>
+            <input id="input" type="text" class="w-[900px] border-green-200 text-center text-[20px] text-[#333] font-bold border-2 h-[80px] shadow-xl bg-white mt-5 rounded-full">
+        </div>
+        <button id="button" class="h-[70px] mt-[-30px] bg-[#a2ded0] border-green-100 rounded-xl shadow-xl  border-2 w-[300px] text-[30px] hover:bg-green-200 cursor-pointer">Cadastrar</button>
+    </div>
+
+
+
+    <script src="js/homepage.js"></script>
 </body>
+
 </html>
