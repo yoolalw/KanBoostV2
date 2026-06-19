@@ -209,4 +209,6 @@ class TestPages:
         avancar.click()
         time.sleep(1)
 
-    
+    def test_click_in_button_for_generate_document(self):
+        relBtn = self.chrome.find_element(By.ID, 'relBtn')
+        relBtn.click()
